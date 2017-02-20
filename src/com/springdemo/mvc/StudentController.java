@@ -28,6 +28,11 @@ public class StudentController {
 		System.out.println("TheStudent: " + theStudent.getFirstName() + " " + theStudent.getLastName());
 		System.out.println("Country: " + theStudent.getCountry());
 		System.out.println("Favorite language: " + theStudent.getFavoriteLanguage());
+		System.out.println("Favorite OS: ");
+		
+		for(String os : theStudent.getOperatingSystems()){
+			System.out.print(os + " ");
+		}
 		
 		return "student-confirmation";
 	}
